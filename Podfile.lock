@@ -1,16 +1,20 @@
 PODS:
   - KeychainAccess (4.2.2)
+  - RxSwift (6.5.0)
 
 DEPENDENCIES:
   - KeychainAccess
+  - RxSwift
 
 SPEC REPOS:
   trunk:
     - KeychainAccess
+    - RxSwift
 
 SPEC CHECKSUMS:
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
 
-PODFILE CHECKSUM: f6b2c0ca181ea5eec6797c80b81d6d2ec1c72a51
+PODFILE CHECKSUM: e0072958a8928c89a7e07dd774e8f2eaed7ff8d8
 
 COCOAPODS: 1.11.3

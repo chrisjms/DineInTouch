@@ -7,5 +7,6 @@ target 'DineInTouch' do
 
   # Pods for DineInTouch
   pod 'KeychainAccess'
+  pod 'RxSwift'
 
 end
