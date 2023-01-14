@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Dish {
+struct Dish: Hashable {
     
     let dishId: String
     let type: DishType

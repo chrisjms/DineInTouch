@@ -1,0 +1,82 @@
+//
+//  SetMenuViewModel.swift
+//  DineInTouch
+//
+//  Created by Chris on 14/01/2023.
+//
+
+import Foundation
+import RxSwift
+
+class SetMenuViewModel: ObservableObject {
+    
+    let disposeBag: DisposeBag = DisposeBag()
+    
+    @Published var appetizer: String = ""
+    @Published var appetizerPrice: String = ""
+    @Published var starterPrice: String = ""
+    @Published var starter: String = ""
+    @Published var dishPrice: String = ""
+    @Published var dish: String = ""
+    @Published var dessertPrice: String = ""
+    @Published var dessert: String = ""
+
+    @Published var dishesList: [Dish] = []
+    @Published var showAlert: Bool = false
+
+    func createDish(dishType: Dish.DishType) {
+        switch dishType {
+        case .appetizer:
+            guard !appetizer.isEmpty && !appetizerPrice.isEmpty else {
+                showAlert.toggle()
+                return
+            }
+            let dish = Dish(dishId: UUID().uuidString, type: dishType, name: self.appetizer, price: Double(self.appetizerPrice)!)
+            dishesList.append(dish)
+            self.appetizer = ""
+            self.appetizerPrice = ""
+        case .starter:
+            guard !starter.isEmpty && !starterPrice.isEmpty else {
+                showAlert.toggle()
+                return
+            }
+            let dish = Dish(dishId: UUID().uuidString, type: dishType, name: self.starter, price: Double(self.starterPrice)!)
+            dishesList.append(dish)
+            self.starter = ""
+            self.starterPrice = ""
+        case .dish:
+            guard !dish.isEmpty && !dishPrice.isEmpty else {
+                showAlert.toggle()
+                return
+            }
+            let dish = Dish(dishId: UUID().uuidString, type: dishType, name: self.dish, price: Double(self.dishPrice)!)
+            dishesList.append(dish)
+            self.dish = ""
+            self.dishPrice = ""
+        case .dessert:
+            guard !dessert.isEmpty && !dessertPrice.isEmpty else {
+                showAlert.toggle()
+                return
+            }
+            let dish = Dish(dishId: UUID().uuidString, type: dishType, name: self.dessert, price: Double(self.dessertPrice)!)
+            dishesList.append(dish)
+            self.dessert = ""
+            self.dessertPrice = ""
+        case .drink:
+            print("not available")
+        }
+    }
+
+    func sendMenu() {
+        dishesList.forEach { dish in
+            DataProviderManager.shared.insertDish(dish: dish)
+                .subscribe(onSuccess: { success in
+                    print("successfully added menu")
+                }, onFailure: { error in
+                    print(error.localizedDescription)
+                })
+                .disposed(by: disposeBag)
+        }
+    }
+
+}

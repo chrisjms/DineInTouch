@@ -25,6 +25,7 @@
 		834CAFA2297305E8003427E1 /* DishDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CAFA1297305E8003427E1 /* DishDataMapper.swift */; };
 		8381FF8A2973148600E5F8AA /* DataProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF892973148600E5F8AA /* DataProviderManager.swift */; };
 		8381FF8C2973152100E5F8AA /* DataProviderManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF8B2973152100E5F8AA /* DataProviderManagerProtocol.swift */; };
+		8381FF8E2973505D00E5F8AA /* SetMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF8D2973505D00E5F8AA /* SetMenuViewModel.swift */; };
 		839D0F1D2972D723006A7675 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1C2972D723006A7675 /* Dish.swift */; };
 		839D0F1F2972D8F5006A7675 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1E2972D8F5006A7675 /* Command.swift */; };
 		839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F232972DA23006A7675 /* CoreDataManager.swift */; };
@@ -34,7 +35,7 @@
 		839D0F312972E169006A7675 /* CommandDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F302972E169006A7675 /* CommandDataMapper.swift */; };
 		839D0F342972E3BC006A7675 /* GLOBALS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F332972E3BC006A7675 /* GLOBALS.swift */; };
 		839D0F362972E7EB006A7675 /* DineInTouchKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F352972E7EB006A7675 /* DineInTouchKeyManager.swift */; };
-		83C07D892972BD7900372BBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C07D882972BD7900372BBA /* ContentView.swift */; };
+		83C07D892972BD7900372BBA /* SetMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C07D882972BD7900372BBA /* SetMenuView.swift */; };
 		83C07D8B2972BD7A00372BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C07D8A2972BD7A00372BBA /* Assets.xcassets */; };
 		83C07D8E2972BD7A00372BBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C07D8D2972BD7A00372BBA /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		834CAFA1297305E8003427E1 /* DishDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDataMapper.swift; sourceTree = "<group>"; };
 		8381FF892973148600E5F8AA /* DataProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManager.swift; sourceTree = "<group>"; };
 		8381FF8B2973152100E5F8AA /* DataProviderManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManagerProtocol.swift; sourceTree = "<group>"; };
+		8381FF8D2973505D00E5F8AA /* SetMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMenuViewModel.swift; sourceTree = "<group>"; };
 		839D0F1C2972D723006A7675 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		839D0F1E2972D8F5006A7675 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		839D0F232972DA23006A7675 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -68,7 +70,7 @@
 		839D0F332972E3BC006A7675 /* GLOBALS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLOBALS.swift; sourceTree = "<group>"; };
 		839D0F352972E7EB006A7675 /* DineInTouchKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DineInTouchKeyManager.swift; sourceTree = "<group>"; };
 		83C07D832972BD7900372BBA /* DineInTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DineInTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83C07D882972BD7900372BBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		83C07D882972BD7900372BBA /* SetMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMenuView.swift; sourceTree = "<group>"; };
 		83C07D8A2972BD7A00372BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83C07D8D2972BD7A00372BBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8FBCFB0A05F1F0B65429BB26 /* Pods_DineInTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DineInTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,7 +155,8 @@
 		839D0F212972D9EB006A7675 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				83C07D882972BD7900372BBA /* ContentView.swift */,
+				83C07D882972BD7900372BBA /* SetMenuView.swift */,
+				8381FF8D2973505D00E5F8AA /* SetMenuViewModel.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -387,9 +390,10 @@
 				834CAFA02973054C003427E1 /* DishDataRepository.swift in Sources */,
 				8302E7312972F38F00D98545 /* CommandDataStore.swift in Sources */,
 				8302E73F2972FABF00D98545 /* LocalDishDataStore.swift in Sources */,
+				8381FF8E2973505D00E5F8AA /* SetMenuViewModel.swift in Sources */,
 				839D0F1D2972D723006A7675 /* Dish.swift in Sources */,
 				834CAF9E2973052A003427E1 /* DishRepository.swift in Sources */,
-				83C07D892972BD7900372BBA /* ContentView.swift in Sources */,
+				83C07D892972BD7900372BBA /* SetMenuView.swift in Sources */,
 				8302E7332972F4FA00D98545 /* CommandDataStoreFactory.swift in Sources */,
 				839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */,
 				839D0F342972E3BC006A7675 /* GLOBALS.swift in Sources */,

@@ -8,14 +8,13 @@
 import UIKit
 import SwiftUI
 import FirebaseCore
-import RxSwift
 
 @main
 struct launchView: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SetMenuView(viewModel: SetMenuViewModel())
         }
     }
 }
