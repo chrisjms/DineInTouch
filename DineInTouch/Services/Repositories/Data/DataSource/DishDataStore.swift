@@ -13,7 +13,7 @@ protocol DishDataStore {
     func saveDish(dish: Dish)
     func getDishes() -> Single<[Dish]>
     func getLocalDishes() -> Single<[Dish]>
-    func deleteDish()
+    func deleteDish(dish: Dish)
     func deleteLocalDish(dish: Dish)
     func insertDish(dish: Dish) -> Single<Bool>
     

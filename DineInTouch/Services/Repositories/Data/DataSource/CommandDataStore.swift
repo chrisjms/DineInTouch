@@ -16,5 +16,7 @@ protocol CommandDataStore {
     func deleteAll()
     func deleteAllLocalCommands()
     func sendCommand(command: Command) -> Single<Bool>
+    func deleteCommand(command: Command) -> Single<Bool>
+    func deleteLocalCommand(command: Command)
     
 }

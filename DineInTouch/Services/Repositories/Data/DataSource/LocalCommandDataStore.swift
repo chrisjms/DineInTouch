@@ -16,6 +16,14 @@ class LocalCommandDataStore: CommandDataStore {
         self.commandDao = CommandDao()
     }
     
+    func deleteCommand(command: Command) -> Single<Bool> {
+        fatalError("Operation is not available !!!")
+    }
+    
+    func deleteLocalCommand(command: Command) {
+        commandDao.delete(command: command)
+    }
+    
     func saveCommand(command: Command) {
         commandDao.insert(command: command)
     }

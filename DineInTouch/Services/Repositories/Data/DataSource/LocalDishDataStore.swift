@@ -28,7 +28,7 @@ class LocalDishDataStore: DishDataStore {
         return Single.just(dishDao.getAllDishes())
     }
     
-    func deleteDish() {
+    func deleteDish(dish: Dish) {
         fatalError("Operation is not available !!!")
     }
     

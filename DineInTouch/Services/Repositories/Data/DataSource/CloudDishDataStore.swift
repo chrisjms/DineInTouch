@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 
 class CloudDishDataStore: DishDataStore {
-    
+
     func saveDish(dish: Dish) {
         fatalError("Operation is not available !!!")
     }
@@ -20,7 +20,7 @@ class CloudDishDataStore: DishDataStore {
     
     
     func insertDish(dish: Dish) -> Single<Bool> {
-        fatalError("Operation is not  !!!")
+        return DataProviderManager.shared.insertDish(dish: dish)
     }
     
     func insertLocalDish(dish: Dish) -> Bool {
@@ -28,11 +28,11 @@ class CloudDishDataStore: DishDataStore {
     }
     
     func getDishes() -> Single<[Dish]> {
-        fatalError("Operation is not  !!!")
+        DataProviderManager.shared.getAllDishes()
     }
 
-    func deleteDish() {
-        fatalError("Operation is not  !!!")
+    func deleteDish(dish: Dish) {
+        DataProviderManager.shared.deleteDish(dish: dish)
     }
     
     func deleteLocalDish(dish: Dish) {

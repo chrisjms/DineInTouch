@@ -10,6 +10,14 @@ import RxSwift
 
 class CloudCommandDataStore: CommandDataStore {
     
+    func deleteCommand(command: Command) -> Single<Bool> {
+        DataProviderManager.shared.deleteCommand(command: command)
+    }
+    
+    func deleteLocalCommand(command: Command) {
+        fatalError("Operation is not available !!!")
+    }
+    
     func deleteAllLocalCommands() {
         fatalError("Operation is not available !!!")
     }
@@ -19,8 +27,7 @@ class CloudCommandDataStore: CommandDataStore {
     }
     
     func getCommands() -> Single<[Command]> {
-        fatalError("Operation is not  !!!")
-
+        DataProviderManager.shared.getAllCommands()
     }
     
     func getLocalCommands() -> Single<[Command]> {
@@ -28,11 +35,11 @@ class CloudCommandDataStore: CommandDataStore {
     }
     
     func deleteAll() {
-        fatalError("Operation is not  !!!")
+        DataProviderManager.shared.deleteAllCommands()
     }
     
     func sendCommand(command: Command) -> Single<Bool> {
-        fatalError("Operation is not  !!!")
+        DataProviderManager.shared.insertCommand(command: command)
     }
     
 }
