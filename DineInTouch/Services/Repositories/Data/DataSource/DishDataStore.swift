@@ -10,11 +10,11 @@ import RxSwift
 
 protocol DishDataStore {
     
-    func saveDish()
+    func saveDish(dish: Dish)
     func getDishes() -> Single<[Dish]>
-    func getLocalDishes() -> [Dish]
+    func getLocalDishes() -> Single<[Dish]>
     func deleteDish()
-    func deleteLocalDish()
+    func deleteLocalDish(dish: Dish)
     func insertDish(dish: Dish) -> Single<Bool>
-    func insertLocalDish(dish: Dish) -> Bool
+    
 }

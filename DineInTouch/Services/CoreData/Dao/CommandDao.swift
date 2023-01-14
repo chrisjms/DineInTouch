@@ -11,7 +11,7 @@ import CoreData
 struct CommandDao {
     
     private let context = CoreDataManager.shared.persistentContainer.viewContext
-    let coreDataManager = CoreDataManager()
+    private let coreDataManager = CoreDataManager()
     
     func get(commandId: String) -> Command? {
         let fetchRequest: NSFetchRequest<NSFetchRequestResult> = DBCommand.fetchRequest()
@@ -25,7 +25,7 @@ struct CommandDao {
         return nil
     }
     
-    func getAllCommand() -> [Command] {
+    func getAllCommands() -> [Command] {
         let fetchRequest: NSFetchRequest<DBCommand> = DBCommand.fetchRequest()
         if let dbCommand = try? context.fetch(fetchRequest) {
             print("all commands from local base fetched")

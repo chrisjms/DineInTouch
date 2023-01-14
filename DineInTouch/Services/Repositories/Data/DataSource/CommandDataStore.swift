@@ -12,7 +12,7 @@ protocol CommandDataStore {
     
     func saveCommand(command: Command)
     func getCommands() -> Single<[Command]>
-    func getLocalCommands() -> [Command]
+    func getLocalCommands() -> Single<[Command]>
     func deleteAll()
     func deleteAllLocalCommands()
     func sendCommand(command: Command) -> Single<Bool>

@@ -23,6 +23,8 @@
 		834CAF9E2973052A003427E1 /* DishRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CAF9D2973052A003427E1 /* DishRepository.swift */; };
 		834CAFA02973054C003427E1 /* DishDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CAF9F2973054C003427E1 /* DishDataRepository.swift */; };
 		834CAFA2297305E8003427E1 /* DishDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CAFA1297305E8003427E1 /* DishDataMapper.swift */; };
+		8381FF8A2973148600E5F8AA /* DataProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF892973148600E5F8AA /* DataProviderManager.swift */; };
+		8381FF8C2973152100E5F8AA /* DataProviderManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF8B2973152100E5F8AA /* DataProviderManagerProtocol.swift */; };
 		839D0F1D2972D723006A7675 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1C2972D723006A7675 /* Dish.swift */; };
 		839D0F1F2972D8F5006A7675 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1E2972D8F5006A7675 /* Command.swift */; };
 		839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F232972DA23006A7675 /* CoreDataManager.swift */; };
@@ -54,6 +56,8 @@
 		834CAF9D2973052A003427E1 /* DishRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishRepository.swift; sourceTree = "<group>"; };
 		834CAF9F2973054C003427E1 /* DishDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDataRepository.swift; sourceTree = "<group>"; };
 		834CAFA1297305E8003427E1 /* DishDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDataMapper.swift; sourceTree = "<group>"; };
+		8381FF892973148600E5F8AA /* DataProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManager.swift; sourceTree = "<group>"; };
+		8381FF8B2973152100E5F8AA /* DataProviderManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManagerProtocol.swift; sourceTree = "<group>"; };
 		839D0F1C2972D723006A7675 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		839D0F1E2972D8F5006A7675 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		839D0F232972DA23006A7675 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -117,6 +121,15 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		8381FF882973147300E5F8AA /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				8381FF892973148600E5F8AA /* DataProviderManager.swift */,
+				8381FF8B2973152100E5F8AA /* DataProviderManagerProtocol.swift */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
 		839D0F1B2972D6E6006A7675 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +188,7 @@
 		839D0F2E2972E149006A7675 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				8381FF882973147300E5F8AA /* Net */,
 				8302E72A2972F2DC00D98545 /* Data */,
 				839D0F2F2972E155006A7675 /* Mapper */,
 			);
@@ -369,6 +383,7 @@
 				8302E7352972F51900D98545 /* CloudCommandDataStore.swift in Sources */,
 				839D0F312972E169006A7675 /* CommandDataMapper.swift in Sources */,
 				8302E72C2972F2F500D98545 /* CommandDataRepository.swift in Sources */,
+				8381FF8C2973152100E5F8AA /* DataProviderManagerProtocol.swift in Sources */,
 				834CAFA02973054C003427E1 /* DishDataRepository.swift in Sources */,
 				8302E7312972F38F00D98545 /* CommandDataStore.swift in Sources */,
 				8302E73F2972FABF00D98545 /* LocalDishDataStore.swift in Sources */,
@@ -385,6 +400,7 @@
 				839D0F2D2972DDF5006A7675 /* CommandDao.swift in Sources */,
 				8302E73D2972FAB500D98545 /* CloudDishDataStore.swift in Sources */,
 				839D0F1F2972D8F5006A7675 /* Command.swift in Sources */,
+				8381FF8A2973148600E5F8AA /* DataProviderManager.swift in Sources */,
 				834CAFA2297305E8003427E1 /* DishDataMapper.swift in Sources */,
 				8302E7392972F92300D98545 /* DishDataStore.swift in Sources */,
 			);

@@ -10,16 +10,22 @@ import RxSwift
 
 class LocalCommandDataStore: CommandDataStore {
     
+    let commandDao: CommandDao
+    
+    init() {
+        self.commandDao = CommandDao()
+    }
+    
     func saveCommand(command: Command) {
-        fatalError("Operation is not  !!!")
+        commandDao.insert(command: command)
     }
     
     func getCommands() -> Single<[Command]> {
         fatalError("Operation is not available !!!")
     }
     
-    func getLocalCommands() -> [Command] {
-        fatalError("Operation is not  !!!")
+    func getLocalCommands() -> Single<[Command]> {
+        return Single.just(commandDao.getAllCommands())
     }
     
     func deleteAll() {
@@ -27,7 +33,7 @@ class LocalCommandDataStore: CommandDataStore {
     }
     
     func deleteAllLocalCommands() {
-        fatalError("Operation is not  !!!")
+        commandDao.deleteAll()
     }
     
     func sendCommand(command: Command) -> Single<Bool> {

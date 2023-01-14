@@ -10,6 +10,15 @@ import RxSwift
 
 class CloudDishDataStore: DishDataStore {
     
+    func saveDish(dish: Dish) {
+        fatalError("Operation is not available !!!")
+    }
+    
+    func getLocalDishes() -> Single<[Dish]> {
+        fatalError("Operation is not available !!!")
+    }
+    
+    
     func insertDish(dish: Dish) -> Single<Bool> {
         fatalError("Operation is not  !!!")
     }
@@ -18,24 +27,15 @@ class CloudDishDataStore: DishDataStore {
         fatalError("Operation is not available !!!")
     }
     
-    
-    func saveDish() {
-        fatalError("Operation is not available !!!")
-    }
-    
     func getDishes() -> Single<[Dish]> {
         fatalError("Operation is not  !!!")
     }
-    
-    func getLocalDishes() -> [Dish] {
-        fatalError("Operation is not available !!!")
-    }
-    
+
     func deleteDish() {
         fatalError("Operation is not  !!!")
     }
     
-    func deleteLocalDish() {
+    func deleteLocalDish(dish: Dish) {
         fatalError("Operation is not available !!!")
     }
     

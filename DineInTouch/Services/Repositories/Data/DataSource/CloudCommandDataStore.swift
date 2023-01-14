@@ -23,7 +23,7 @@ class CloudCommandDataStore: CommandDataStore {
 
     }
     
-    func getLocalCommands() -> [Command] {
+    func getLocalCommands() -> Single<[Command]> {
         fatalError("Operation is not available !!!")
     }
     

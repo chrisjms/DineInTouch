@@ -10,29 +10,30 @@ import RxSwift
 
 class LocalDishDataStore: DishDataStore {
     
-    func insertLocalDish(dish: Dish) -> Bool {
-        fatalError("Operation is not  !!!")
+    let dishDao: DishDao
+    
+    init() {
+        self.dishDao = DishDao()
     }
-    
-    
-    func saveDish() {
-        fatalError("Operation is not  !!!")
+
+    func saveDish(dish: Dish) {
+        dishDao.insert(dish: dish)
     }
     
     func getDishes() -> Single<[Dish]> {
         fatalError("Operation is not available !!!")
     }
     
-    func getLocalDishes() -> [Dish] {
-        fatalError("Operation is not  !!!")
+    func getLocalDishes() -> Single<[Dish]> {
+        return Single.just(dishDao.getAllDishes())
     }
     
     func deleteDish() {
         fatalError("Operation is not available !!!")
     }
     
-    func deleteLocalDish() {
-        fatalError("Operation is not  !!!")
+    func deleteLocalDish(dish: Dish) {
+        dishDao.delete(dish: dish)
     }
     
     func insertDish(dish: Dish) -> Single<Bool> {
