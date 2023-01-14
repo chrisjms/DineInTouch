@@ -7,9 +7,9 @@
         <attribute name="tableId" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="DBDish" representedClassName="DBDish" syncable="YES" codeGenerationType="class">
+        <attribute name="dishId" attributeType="String"/>
         <attribute name="dishType" attributeType="String"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="price" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="restaurantId" attributeType="String"/>
     </entity>
 </model>

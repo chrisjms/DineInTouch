@@ -11,12 +11,12 @@ import RxSwift
 class LocalDishDataStore: DishDataStore {
     
     func insertLocalDish(dish: Dish) -> Bool {
-        <#code#>
+        fatalError("Operation is not  !!!")
     }
     
     
     func saveDish() {
-        <#code#>
+        fatalError("Operation is not  !!!")
     }
     
     func getDishes() -> Single<[Dish]> {
@@ -24,7 +24,7 @@ class LocalDishDataStore: DishDataStore {
     }
     
     func getLocalDishes() -> [Dish] {
-        <#code#>
+        fatalError("Operation is not  !!!")
     }
     
     func deleteDish() {
@@ -32,7 +32,7 @@ class LocalDishDataStore: DishDataStore {
     }
     
     func deleteLocalDish() {
-        <#code#>
+        fatalError("Operation is not  !!!")
     }
     
     func insertDish(dish: Dish) -> Single<Bool> {

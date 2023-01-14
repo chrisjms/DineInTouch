@@ -11,7 +11,7 @@ import RxSwift
 class LocalCommandDataStore: CommandDataStore {
     
     func saveCommand(command: Command) {
-        <#code#>
+        fatalError("Operation is not  !!!")
     }
     
     func getCommands() -> Single<[Command]> {
@@ -19,7 +19,7 @@ class LocalCommandDataStore: CommandDataStore {
     }
     
     func getLocalCommands() -> [Command] {
-        <#code#>
+        fatalError("Operation is not  !!!")
     }
     
     func deleteAll() {
@@ -27,7 +27,7 @@ class LocalCommandDataStore: CommandDataStore {
     }
     
     func deleteAllLocalCommands() {
-        <#code#>
+        fatalError("Operation is not  !!!")
     }
     
     func sendCommand(command: Command) -> Single<Bool> {

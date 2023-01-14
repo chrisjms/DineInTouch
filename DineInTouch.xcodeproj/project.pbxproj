@@ -20,6 +20,9 @@
 		8302E73D2972FAB500D98545 /* CloudDishDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E73C2972FAB500D98545 /* CloudDishDataStore.swift */; };
 		8302E73F2972FABF00D98545 /* LocalDishDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E73E2972FABF00D98545 /* LocalDishDataStore.swift */; };
 		8302E7412972FDA100D98545 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8302E7402972FDA100D98545 /* GoogleService-Info.plist */; };
+		834CAF9E2973052A003427E1 /* DishRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CAF9D2973052A003427E1 /* DishRepository.swift */; };
+		834CAFA02973054C003427E1 /* DishDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CAF9F2973054C003427E1 /* DishDataRepository.swift */; };
+		834CAFA2297305E8003427E1 /* DishDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CAFA1297305E8003427E1 /* DishDataMapper.swift */; };
 		839D0F1D2972D723006A7675 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1C2972D723006A7675 /* Dish.swift */; };
 		839D0F1F2972D8F5006A7675 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1E2972D8F5006A7675 /* Command.swift */; };
 		839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F232972DA23006A7675 /* CoreDataManager.swift */; };
@@ -48,6 +51,9 @@
 		8302E73C2972FAB500D98545 /* CloudDishDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDishDataStore.swift; sourceTree = "<group>"; };
 		8302E73E2972FABF00D98545 /* LocalDishDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDishDataStore.swift; sourceTree = "<group>"; };
 		8302E7402972FDA100D98545 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		834CAF9D2973052A003427E1 /* DishRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishRepository.swift; sourceTree = "<group>"; };
+		834CAF9F2973054C003427E1 /* DishDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDataRepository.swift; sourceTree = "<group>"; };
+		834CAFA1297305E8003427E1 /* DishDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDataMapper.swift; sourceTree = "<group>"; };
 		839D0F1C2972D723006A7675 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		839D0F1E2972D8F5006A7675 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		839D0F232972DA23006A7675 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -91,6 +97,7 @@
 			children = (
 				8302E72F2972F36C00D98545 /* DataSource */,
 				8302E72B2972F2F500D98545 /* CommandDataRepository.swift */,
+				834CAF9F2973054C003427E1 /* DishDataRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -125,6 +132,7 @@
 				839D0F2E2972E149006A7675 /* Repositories */,
 				839D0F222972DA0A006A7675 /* CoreData */,
 				8302E72D2972F30400D98545 /* CommandRepository.swift */,
+				834CAF9D2973052A003427E1 /* DishRepository.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 		839D0F212972D9EB006A7675 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				83C07D882972BD7900372BBA /* ContentView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -176,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				839D0F302972E169006A7675 /* CommandDataMapper.swift */,
+				834CAFA1297305E8003427E1 /* DishDataMapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -215,7 +225,6 @@
 				839D0F212972D9EB006A7675 /* Features */,
 				839D0F202972D9D1006A7675 /* Services */,
 				839D0F1B2972D6E6006A7675 /* Models */,
-				83C07D882972BD7900372BBA /* ContentView.swift */,
 				83C07D8A2972BD7A00372BBA /* Assets.xcassets */,
 				83C07D8C2972BD7A00372BBA /* Preview Content */,
 				8302E7282972EB6B00D98545 /* AppDelegate.swift */,
@@ -360,9 +369,11 @@
 				8302E7352972F51900D98545 /* CloudCommandDataStore.swift in Sources */,
 				839D0F312972E169006A7675 /* CommandDataMapper.swift in Sources */,
 				8302E72C2972F2F500D98545 /* CommandDataRepository.swift in Sources */,
+				834CAFA02973054C003427E1 /* DishDataRepository.swift in Sources */,
 				8302E7312972F38F00D98545 /* CommandDataStore.swift in Sources */,
 				8302E73F2972FABF00D98545 /* LocalDishDataStore.swift in Sources */,
 				839D0F1D2972D723006A7675 /* Dish.swift in Sources */,
+				834CAF9E2973052A003427E1 /* DishRepository.swift in Sources */,
 				83C07D892972BD7900372BBA /* ContentView.swift in Sources */,
 				8302E7332972F4FA00D98545 /* CommandDataStoreFactory.swift in Sources */,
 				839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */,
@@ -374,6 +385,7 @@
 				839D0F2D2972DDF5006A7675 /* CommandDao.swift in Sources */,
 				8302E73D2972FAB500D98545 /* CloudDishDataStore.swift in Sources */,
 				839D0F1F2972D8F5006A7675 /* Command.swift in Sources */,
+				834CAFA2297305E8003427E1 /* DishDataMapper.swift in Sources */,
 				8302E7392972F92300D98545 /* DishDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

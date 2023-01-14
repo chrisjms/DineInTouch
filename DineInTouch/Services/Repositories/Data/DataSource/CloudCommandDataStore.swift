@@ -19,7 +19,8 @@ class CloudCommandDataStore: CommandDataStore {
     }
     
     func getCommands() -> Single<[Command]> {
-        <#code#>
+        fatalError("Operation is not  !!!")
+
     }
     
     func getLocalCommands() -> [Command] {
@@ -27,11 +28,11 @@ class CloudCommandDataStore: CommandDataStore {
     }
     
     func deleteAll() {
-        <#code#>
+        fatalError("Operation is not  !!!")
     }
     
     func sendCommand(command: Command) -> Single<Bool> {
-        <#code#>
+        fatalError("Operation is not  !!!")
     }
     
 }

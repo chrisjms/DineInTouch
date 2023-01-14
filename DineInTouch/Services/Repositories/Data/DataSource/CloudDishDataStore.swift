@@ -11,7 +11,7 @@ import RxSwift
 class CloudDishDataStore: DishDataStore {
     
     func insertDish(dish: Dish) -> Single<Bool> {
-        <#code#>
+        fatalError("Operation is not  !!!")
     }
     
     func insertLocalDish(dish: Dish) -> Bool {
@@ -24,7 +24,7 @@ class CloudDishDataStore: DishDataStore {
     }
     
     func getDishes() -> Single<[Dish]> {
-        <#code#>
+        fatalError("Operation is not  !!!")
     }
     
     func getLocalDishes() -> [Dish] {
@@ -32,7 +32,7 @@ class CloudDishDataStore: DishDataStore {
     }
     
     func deleteDish() {
-        <#code#>
+        fatalError("Operation is not  !!!")
     }
     
     func deleteLocalDish() {

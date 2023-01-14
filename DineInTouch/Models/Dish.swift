@@ -9,6 +9,11 @@ import Foundation
 
 struct Dish {
     
+    let dishId: String
+    let type: DishType
+    let name: String
+    let price: Double
+    
     //todo add cuisson for meat?
     enum DishType {
         case starter
@@ -47,10 +52,5 @@ struct Dish {
             }
         }
     }
-    
-    let restaurantId: String
-    let type: DishType
-    let name: String
-    let price: Float64
     
 }
