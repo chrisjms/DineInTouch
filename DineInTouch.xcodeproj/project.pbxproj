@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		21B1DB0CC18F901FE5FEAE5C /* Pods_DineInTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBCFB0A05F1F0B65429BB26 /* Pods_DineInTouch.framework */; };
 		8302E7292972EB6B00D98545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E7282972EB6B00D98545 /* AppDelegate.swift */; };
+		8302E72C2972F2F500D98545 /* CommandDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E72B2972F2F500D98545 /* CommandDataRepository.swift */; };
+		8302E72E2972F30400D98545 /* CommandRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E72D2972F30400D98545 /* CommandRepository.swift */; };
+		8302E7312972F38F00D98545 /* CommandDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E7302972F38F00D98545 /* CommandDataStore.swift */; };
+		8302E7332972F4FA00D98545 /* CommandDataStoreFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E7322972F4FA00D98545 /* CommandDataStoreFactory.swift */; };
+		8302E7352972F51900D98545 /* CloudCommandDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E7342972F51900D98545 /* CloudCommandDataStore.swift */; };
+		8302E7372972F55200D98545 /* LocalCommandDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E7362972F55200D98545 /* LocalCommandDataStore.swift */; };
+		8302E7392972F92300D98545 /* DishDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E7382972F92300D98545 /* DishDataStore.swift */; };
+		8302E73B2972FAA500D98545 /* DishDataStoreFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E73A2972FAA500D98545 /* DishDataStoreFactory.swift */; };
+		8302E73D2972FAB500D98545 /* CloudDishDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E73C2972FAB500D98545 /* CloudDishDataStore.swift */; };
+		8302E73F2972FABF00D98545 /* LocalDishDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E73E2972FABF00D98545 /* LocalDishDataStore.swift */; };
 		839D0F1D2972D723006A7675 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1C2972D723006A7675 /* Dish.swift */; };
 		839D0F1F2972D8F5006A7675 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1E2972D8F5006A7675 /* Command.swift */; };
 		839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F232972DA23006A7675 /* CoreDataManager.swift */; };
@@ -26,6 +36,16 @@
 /* Begin PBXFileReference section */
 		81AA2779C26DC45BA9666C88 /* Pods-DineInTouch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DineInTouch.release.xcconfig"; path = "Target Support Files/Pods-DineInTouch/Pods-DineInTouch.release.xcconfig"; sourceTree = "<group>"; };
 		8302E7282972EB6B00D98545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8302E72B2972F2F500D98545 /* CommandDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDataRepository.swift; sourceTree = "<group>"; };
+		8302E72D2972F30400D98545 /* CommandRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandRepository.swift; sourceTree = "<group>"; };
+		8302E7302972F38F00D98545 /* CommandDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDataStore.swift; sourceTree = "<group>"; };
+		8302E7322972F4FA00D98545 /* CommandDataStoreFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDataStoreFactory.swift; sourceTree = "<group>"; };
+		8302E7342972F51900D98545 /* CloudCommandDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudCommandDataStore.swift; sourceTree = "<group>"; };
+		8302E7362972F55200D98545 /* LocalCommandDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCommandDataStore.swift; sourceTree = "<group>"; };
+		8302E7382972F92300D98545 /* DishDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDataStore.swift; sourceTree = "<group>"; };
+		8302E73A2972FAA500D98545 /* DishDataStoreFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDataStoreFactory.swift; sourceTree = "<group>"; };
+		8302E73C2972FAB500D98545 /* CloudDishDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDishDataStore.swift; sourceTree = "<group>"; };
+		8302E73E2972FABF00D98545 /* LocalDishDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDishDataStore.swift; sourceTree = "<group>"; };
 		839D0F1C2972D723006A7675 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		839D0F1E2972D8F5006A7675 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		839D0F232972DA23006A7675 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -64,6 +84,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8302E72A2972F2DC00D98545 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8302E72F2972F36C00D98545 /* DataSource */,
+				8302E72B2972F2F500D98545 /* CommandDataRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8302E72F2972F36C00D98545 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8302E7302972F38F00D98545 /* CommandDataStore.swift */,
+				8302E7322972F4FA00D98545 /* CommandDataStoreFactory.swift */,
+				8302E7342972F51900D98545 /* CloudCommandDataStore.swift */,
+				8302E7362972F55200D98545 /* LocalCommandDataStore.swift */,
+				8302E7382972F92300D98545 /* DishDataStore.swift */,
+				8302E73A2972FAA500D98545 /* DishDataStoreFactory.swift */,
+				8302E73C2972FAB500D98545 /* CloudDishDataStore.swift */,
+				8302E73E2972FABF00D98545 /* LocalDishDataStore.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		839D0F1B2972D6E6006A7675 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +122,7 @@
 			children = (
 				839D0F2E2972E149006A7675 /* Repositories */,
 				839D0F222972DA0A006A7675 /* CoreData */,
+				8302E72D2972F30400D98545 /* CommandRepository.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -119,6 +164,7 @@
 		839D0F2E2972E149006A7675 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				8302E72A2972F2DC00D98545 /* Data */,
 				839D0F2F2972E155006A7675 /* Mapper */,
 			);
 			path = Repositories;
@@ -306,15 +352,25 @@
 			files = (
 				8302E7292972EB6B00D98545 /* AppDelegate.swift in Sources */,
 				839D0F2B2972DD58006A7675 /* DishDao.swift in Sources */,
+				8302E72E2972F30400D98545 /* CommandRepository.swift in Sources */,
+				8302E7352972F51900D98545 /* CloudCommandDataStore.swift in Sources */,
 				839D0F312972E169006A7675 /* CommandDataMapper.swift in Sources */,
+				8302E72C2972F2F500D98545 /* CommandDataRepository.swift in Sources */,
+				8302E7312972F38F00D98545 /* CommandDataStore.swift in Sources */,
+				8302E73F2972FABF00D98545 /* LocalDishDataStore.swift in Sources */,
 				839D0F1D2972D723006A7675 /* Dish.swift in Sources */,
 				83C07D892972BD7900372BBA /* ContentView.swift in Sources */,
+				8302E7332972F4FA00D98545 /* CommandDataStoreFactory.swift in Sources */,
 				839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */,
 				839D0F342972E3BC006A7675 /* GLOBALS.swift in Sources */,
+				8302E73B2972FAA500D98545 /* DishDataStoreFactory.swift in Sources */,
 				839D0F272972DA6B006A7675 /* DineInTouchDataBase.xcdatamodeld in Sources */,
 				839D0F362972E7EB006A7675 /* DineInTouchKeyManager.swift in Sources */,
+				8302E7372972F55200D98545 /* LocalCommandDataStore.swift in Sources */,
 				839D0F2D2972DDF5006A7675 /* CommandDao.swift in Sources */,
+				8302E73D2972FAB500D98545 /* CloudDishDataStore.swift in Sources */,
 				839D0F1F2972D8F5006A7675 /* Command.swift in Sources */,
+				8302E7392972F92300D98545 /* DishDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
