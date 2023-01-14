@@ -8,5 +8,8 @@ target 'DineInTouch' do
   # Pods for DineInTouch
   pod 'KeychainAccess'
   pod 'RxSwift'
+  pod 'FirebaseAnalytics'
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
 
 end

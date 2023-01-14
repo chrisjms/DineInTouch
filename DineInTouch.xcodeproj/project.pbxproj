@@ -19,6 +19,7 @@
 		8302E73B2972FAA500D98545 /* DishDataStoreFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E73A2972FAA500D98545 /* DishDataStoreFactory.swift */; };
 		8302E73D2972FAB500D98545 /* CloudDishDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E73C2972FAB500D98545 /* CloudDishDataStore.swift */; };
 		8302E73F2972FABF00D98545 /* LocalDishDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E73E2972FABF00D98545 /* LocalDishDataStore.swift */; };
+		8302E7412972FDA100D98545 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8302E7402972FDA100D98545 /* GoogleService-Info.plist */; };
 		839D0F1D2972D723006A7675 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1C2972D723006A7675 /* Dish.swift */; };
 		839D0F1F2972D8F5006A7675 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1E2972D8F5006A7675 /* Command.swift */; };
 		839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F232972DA23006A7675 /* CoreDataManager.swift */; };
@@ -46,6 +47,7 @@
 		8302E73A2972FAA500D98545 /* DishDataStoreFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDataStoreFactory.swift; sourceTree = "<group>"; };
 		8302E73C2972FAB500D98545 /* CloudDishDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDishDataStore.swift; sourceTree = "<group>"; };
 		8302E73E2972FABF00D98545 /* LocalDishDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDishDataStore.swift; sourceTree = "<group>"; };
+		8302E7402972FDA100D98545 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		839D0F1C2972D723006A7675 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		839D0F1E2972D8F5006A7675 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		839D0F232972DA23006A7675 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		83C07D852972BD7900372BBA /* DineInTouch */ = {
 			isa = PBXGroup;
 			children = (
+				8302E7402972FDA100D98545 /* GoogleService-Info.plist */,
 				839D0F322972E3AE006A7675 /* Core */,
 				839D0F212972D9EB006A7675 /* Features */,
 				839D0F202972D9D1006A7675 /* Services */,
@@ -298,6 +301,7 @@
 			files = (
 				83C07D8E2972BD7A00372BBA /* Preview Assets.xcassets in Resources */,
 				83C07D8B2972BD7A00372BBA /* Assets.xcassets in Resources */,
+				8302E7412972FDA100D98545 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
