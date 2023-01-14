@@ -1,0 +1,6 @@
+framework module Pods_DineInTouch {
+  umbrella header "Pods-DineInTouch-umbrella.h"
+
+  export *
+  module * { export * }
+}

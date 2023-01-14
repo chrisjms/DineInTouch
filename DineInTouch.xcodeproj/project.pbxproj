@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21B1DB0CC18F901FE5FEAE5C /* Pods_DineInTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBCFB0A05F1F0B65429BB26 /* Pods_DineInTouch.framework */; };
+		839D0F1D2972D723006A7675 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1C2972D723006A7675 /* Dish.swift */; };
+		839D0F1F2972D8F5006A7675 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1E2972D8F5006A7675 /* Command.swift */; };
+		839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F232972DA23006A7675 /* CoreDataManager.swift */; };
+		839D0F272972DA6B006A7675 /* DineInTouchDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F252972DA6B006A7675 /* DineInTouchDataBase.xcdatamodeld */; };
+		839D0F2B2972DD58006A7675 /* DishDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F2A2972DD58006A7675 /* DishDao.swift */; };
+		839D0F2D2972DDF5006A7675 /* CommandDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F2C2972DDF5006A7675 /* CommandDao.swift */; };
+		839D0F312972E169006A7675 /* CommandDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F302972E169006A7675 /* CommandDataMapper.swift */; };
+		839D0F342972E3BC006A7675 /* GLOBALS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F332972E3BC006A7675 /* GLOBALS.swift */; };
+		839D0F362972E7EB006A7675 /* DineInTouchKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F352972E7EB006A7675 /* DineInTouchKeyManager.swift */; };
 		83C07D872972BD7900372BBA /* DineInTouchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C07D862972BD7900372BBA /* DineInTouchApp.swift */; };
 		83C07D892972BD7900372BBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C07D882972BD7900372BBA /* ContentView.swift */; };
 		83C07D8B2972BD7A00372BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C07D8A2972BD7A00372BBA /* Assets.xcassets */; };
@@ -14,11 +24,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81AA2779C26DC45BA9666C88 /* Pods-DineInTouch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DineInTouch.release.xcconfig"; path = "Target Support Files/Pods-DineInTouch/Pods-DineInTouch.release.xcconfig"; sourceTree = "<group>"; };
+		839D0F1C2972D723006A7675 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		839D0F1E2972D8F5006A7675 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		839D0F232972DA23006A7675 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		839D0F262972DA6B006A7675 /* DineInTouchDataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DineInTouchDataBase.xcdatamodel; sourceTree = "<group>"; };
+		839D0F2A2972DD58006A7675 /* DishDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDao.swift; sourceTree = "<group>"; };
+		839D0F2C2972DDF5006A7675 /* CommandDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDao.swift; sourceTree = "<group>"; };
+		839D0F302972E169006A7675 /* CommandDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDataMapper.swift; sourceTree = "<group>"; };
+		839D0F332972E3BC006A7675 /* GLOBALS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLOBALS.swift; sourceTree = "<group>"; };
+		839D0F352972E7EB006A7675 /* DineInTouchKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DineInTouchKeyManager.swift; sourceTree = "<group>"; };
 		83C07D832972BD7900372BBA /* DineInTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DineInTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C07D862972BD7900372BBA /* DineInTouchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DineInTouchApp.swift; sourceTree = "<group>"; };
 		83C07D882972BD7900372BBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83C07D8A2972BD7A00372BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83C07D8D2972BD7A00372BBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8FBCFB0A05F1F0B65429BB26 /* Pods_DineInTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DineInTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB44D967BA6064F83533892B /* Pods-DineInTouch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DineInTouch.debug.xcconfig"; path = "Target Support Files/Pods-DineInTouch/Pods-DineInTouch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +48,107 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B1DB0CC18F901FE5FEAE5C /* Pods_DineInTouch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B93BBB5F1FC3DC8FE8A3CC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB44D967BA6064F83533892B /* Pods-DineInTouch.debug.xcconfig */,
+				81AA2779C26DC45BA9666C88 /* Pods-DineInTouch.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		839D0F1B2972D6E6006A7675 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				839D0F1C2972D723006A7675 /* Dish.swift */,
+				839D0F1E2972D8F5006A7675 /* Command.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		839D0F202972D9D1006A7675 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				839D0F2E2972E149006A7675 /* Repositories */,
+				839D0F222972DA0A006A7675 /* CoreData */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		839D0F212972D9EB006A7675 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		839D0F222972DA0A006A7675 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				839D0F292972DD4B006A7675 /* Dao */,
+				839D0F282972DD29006A7675 /* DataBase */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		839D0F282972DD29006A7675 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				839D0F232972DA23006A7675 /* CoreDataManager.swift */,
+				839D0F252972DA6B006A7675 /* DineInTouchDataBase.xcdatamodeld */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		839D0F292972DD4B006A7675 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				839D0F2A2972DD58006A7675 /* DishDao.swift */,
+				839D0F2C2972DDF5006A7675 /* CommandDao.swift */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		839D0F2E2972E149006A7675 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				839D0F2F2972E155006A7675 /* Mapper */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		839D0F2F2972E155006A7675 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				839D0F302972E169006A7675 /* CommandDataMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		839D0F322972E3AE006A7675 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				839D0F332972E3BC006A7675 /* GLOBALS.swift */,
+				839D0F352972E7EB006A7675 /* DineInTouchKeyManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		83C07D7A2972BD7900372BBA = {
 			isa = PBXGroup;
 			children = (
 				83C07D852972BD7900372BBA /* DineInTouch */,
 				83C07D842972BD7900372BBA /* Products */,
+				2B93BBB5F1FC3DC8FE8A3CC0 /* Pods */,
+				B02BC48D8E488F2C7215B036 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +163,10 @@
 		83C07D852972BD7900372BBA /* DineInTouch */ = {
 			isa = PBXGroup;
 			children = (
+				839D0F322972E3AE006A7675 /* Core */,
+				839D0F212972D9EB006A7675 /* Features */,
+				839D0F202972D9D1006A7675 /* Services */,
+				839D0F1B2972D6E6006A7675 /* Models */,
 				83C07D862972BD7900372BBA /* DineInTouchApp.swift */,
 				83C07D882972BD7900372BBA /* ContentView.swift */,
 				83C07D8A2972BD7A00372BBA /* Assets.xcassets */,
@@ -67,6 +183,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B02BC48D8E488F2C7215B036 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FBCFB0A05F1F0B65429BB26 /* Pods_DineInTouch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83C07D912972BD7A00372BBA /* Build configuration list for PBXNativeTarget "DineInTouch" */;
 			buildPhases = (
+				2F0019BFEEB4AFC4F5D01692 /* [CP] Check Pods Manifest.lock */,
 				83C07D7F2972BD7900372BBA /* Sources */,
 				83C07D802972BD7900372BBA /* Frameworks */,
 				83C07D812972BD7900372BBA /* Resources */,
+				22BFBCD08EAD644B09C9A2D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +258,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22BFBCD08EAD644B09C9A2D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DineInTouch/Pods-DineInTouch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DineInTouch/Pods-DineInTouch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DineInTouch/Pods-DineInTouch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F0019BFEEB4AFC4F5D01692 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DineInTouch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83C07D7F2972BD7900372BBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839D0F2B2972DD58006A7675 /* DishDao.swift in Sources */,
+				839D0F312972E169006A7675 /* CommandDataMapper.swift in Sources */,
+				839D0F1D2972D723006A7675 /* Dish.swift in Sources */,
 				83C07D892972BD7900372BBA /* ContentView.swift in Sources */,
 				83C07D872972BD7900372BBA /* DineInTouchApp.swift in Sources */,
+				839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */,
+				839D0F342972E3BC006A7675 /* GLOBALS.swift in Sources */,
+				839D0F272972DA6B006A7675 /* DineInTouchDataBase.xcdatamodeld in Sources */,
+				839D0F362972E7EB006A7675 /* DineInTouchKeyManager.swift in Sources */,
+				839D0F2D2972DDF5006A7675 /* CommandDao.swift in Sources */,
+				839D0F1F2972D8F5006A7675 /* Command.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +438,7 @@
 		};
 		83C07D922972BD7A00372BBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB44D967BA6064F83533892B /* Pods-DineInTouch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +468,7 @@
 		};
 		83C07D932972BD7A00372BBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81AA2779C26DC45BA9666C88 /* Pods-DineInTouch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -339,6 +518,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		839D0F252972DA6B006A7675 /* DineInTouchDataBase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				839D0F262972DA6B006A7675 /* DineInTouchDataBase.xcdatamodel */,
+			);
+			currentVersion = 839D0F262972DA6B006A7675 /* DineInTouchDataBase.xcdatamodel */;
+			path = DineInTouchDataBase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 83C07D7B2972BD7900372BBA /* Project object */;
 }
