@@ -10,12 +10,12 @@ import RxSwift
 
 protocol DataProviderManagerProtocol {
     
-    func getCommand()
-    func getAllCommands()
-    func insertCommand(command: Command)
-    func deleteCommand(command: Command)
-    func deleteAllCommands()
-    func getAllDishes()
+    func getCommand() -> Single<Command>
+    func getAllCommands() -> Single<[Command]>
+    func insertCommand(command: Command) -> Single<Bool>
+    func deleteCommand(command: Command) -> Single<Bool>
+    func deleteAllCommands() -> Single<Bool>
+    func getAllDishes() -> Single<[Dish]>
     func insertDish(dish: Dish) -> Single<Bool>
     func deleteDish(dish: Dish) -> Single<Bool>
     
