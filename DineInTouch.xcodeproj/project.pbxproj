@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21B1DB0CC18F901FE5FEAE5C /* Pods_DineInTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBCFB0A05F1F0B65429BB26 /* Pods_DineInTouch.framework */; };
+		8302E7292972EB6B00D98545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E7282972EB6B00D98545 /* AppDelegate.swift */; };
 		839D0F1D2972D723006A7675 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1C2972D723006A7675 /* Dish.swift */; };
 		839D0F1F2972D8F5006A7675 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1E2972D8F5006A7675 /* Command.swift */; };
 		839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F232972DA23006A7675 /* CoreDataManager.swift */; };
@@ -17,7 +18,6 @@
 		839D0F312972E169006A7675 /* CommandDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F302972E169006A7675 /* CommandDataMapper.swift */; };
 		839D0F342972E3BC006A7675 /* GLOBALS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F332972E3BC006A7675 /* GLOBALS.swift */; };
 		839D0F362972E7EB006A7675 /* DineInTouchKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F352972E7EB006A7675 /* DineInTouchKeyManager.swift */; };
-		83C07D872972BD7900372BBA /* DineInTouchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C07D862972BD7900372BBA /* DineInTouchApp.swift */; };
 		83C07D892972BD7900372BBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C07D882972BD7900372BBA /* ContentView.swift */; };
 		83C07D8B2972BD7A00372BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C07D8A2972BD7A00372BBA /* Assets.xcassets */; };
 		83C07D8E2972BD7A00372BBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C07D8D2972BD7A00372BBA /* Preview Assets.xcassets */; };
@@ -25,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		81AA2779C26DC45BA9666C88 /* Pods-DineInTouch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DineInTouch.release.xcconfig"; path = "Target Support Files/Pods-DineInTouch/Pods-DineInTouch.release.xcconfig"; sourceTree = "<group>"; };
+		8302E7282972EB6B00D98545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		839D0F1C2972D723006A7675 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		839D0F1E2972D8F5006A7675 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		839D0F232972DA23006A7675 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		839D0F332972E3BC006A7675 /* GLOBALS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLOBALS.swift; sourceTree = "<group>"; };
 		839D0F352972E7EB006A7675 /* DineInTouchKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DineInTouchKeyManager.swift; sourceTree = "<group>"; };
 		83C07D832972BD7900372BBA /* DineInTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DineInTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83C07D862972BD7900372BBA /* DineInTouchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DineInTouchApp.swift; sourceTree = "<group>"; };
 		83C07D882972BD7900372BBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83C07D8A2972BD7A00372BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83C07D8D2972BD7A00372BBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -61,7 +61,6 @@
 				DB44D967BA6064F83533892B /* Pods-DineInTouch.debug.xcconfig */,
 				81AA2779C26DC45BA9666C88 /* Pods-DineInTouch.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -167,10 +166,10 @@
 				839D0F212972D9EB006A7675 /* Features */,
 				839D0F202972D9D1006A7675 /* Services */,
 				839D0F1B2972D6E6006A7675 /* Models */,
-				83C07D862972BD7900372BBA /* DineInTouchApp.swift */,
 				83C07D882972BD7900372BBA /* ContentView.swift */,
 				83C07D8A2972BD7A00372BBA /* Assets.xcassets */,
 				83C07D8C2972BD7A00372BBA /* Preview Content */,
+				8302E7282972EB6B00D98545 /* AppDelegate.swift */,
 			);
 			path = DineInTouch;
 			sourceTree = "<group>";
@@ -305,11 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8302E7292972EB6B00D98545 /* AppDelegate.swift in Sources */,
 				839D0F2B2972DD58006A7675 /* DishDao.swift in Sources */,
 				839D0F312972E169006A7675 /* CommandDataMapper.swift in Sources */,
 				839D0F1D2972D723006A7675 /* Dish.swift in Sources */,
 				83C07D892972BD7900372BBA /* ContentView.swift in Sources */,
-				83C07D872972BD7900372BBA /* DineInTouchApp.swift in Sources */,
 				839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */,
 				839D0F342972E3BC006A7675 /* GLOBALS.swift in Sources */,
 				839D0F272972DA6B006A7675 /* DineInTouchDataBase.xcdatamodeld in Sources */,
@@ -372,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -426,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -451,8 +450,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,9 +459,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chriisjms.DineInTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -481,8 +483,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,9 +492,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chriisjms.DineInTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
