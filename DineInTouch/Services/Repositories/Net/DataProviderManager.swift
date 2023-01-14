@@ -15,22 +15,71 @@ class DataProviderManager: DataProviderManagerProtocol {
     private let database = Firestore.firestore()
     
     func getAllDishes() -> Single<[Dish]> {
-        fatalError("")
+        return Single.create { single in
+            self.database.collection("dishes").getDocuments { snapshot, error in
+                if let error = error {
+                    print("error retrieving all dishes")
+                    single(.failure(error))
+                } else if let snapshot = snapshot {
+                    var dishes: [Dish] = []
+                    snapshot.documents.forEach { document in
+                        let dish = Dish(dishId: document.documentID, type: Dish.DishType.fromString(dishTypeString: document["type"] as! String), name: document["name"] as! String, price: Double(document["price"] as! Double))
+                        dishes.append(dish)
+                    }
+                    single(.success(dishes))
+                } else {
+                    //todo add error
+                    single(.failure(error!))
+                }
+            }
+            return Disposables.create()
+        }
     }
 
-    func getCommand() -> Single<Command> {
-        fatalError("")
+    func getCommand(commandId: String) -> Single<Command> {
+        return Single.create { single in
+            self.database.collection("commands").document(commandId).getDocument { snapshot, error in
+                if let error = error {
+                    single(.failure(error))
+                } else if let snapshot = snapshot {
+                    let command = Command(commandId: commandId, tableId: Double(snapshot["tableId"] as! Double), creationDate: Double(snapshot["creationDate"] as! Double), dishes: Command.dishesStringToDishes(dishesString: snapshot["dishes"] as! String))
+                    single(.success(command))
+                } else {
+                    //todo error
+                    single(.failure(error!))
+                }
+            }
+            return Disposables.create()
+        }
     }
     
     func getAllCommands() -> Single<[Command]> {
-        fatalError("")
+        return Single.create { single in
+            self.database.collection("commands").getDocuments { snapshot, error in
+                if let error = error {
+                    print("error retrieving all commands")
+                    single(.failure(error))
+                } else if let snapshot = snapshot {
+                    var commands: [Command] = []
+                    snapshot.documents.forEach { document in
+                        let command = Command(commandId: document.documentID, tableId: Double(document["tableId"] as! Double), creationDate: Double(document["creationDate"] as! Double), dishes: Command.dishesStringToDishes(dishesString: document["dishes"] as! String))
+                        commands.append(command)
+                    }
+                    single(.success(commands))
+                } else {
+                    //todo add error
+                    single(.failure(error!))
+                }
+            }
+            return Disposables.create()
+        }
     }
     
     func insertCommand(command: Command) -> Single<Bool> {
         return Single.create { single in
             self.database.collection("commands").document(command.commandId).setData([
-                "creationDate": "\(command.creationDate)",
-                "tableId": "\(command.tableId)",
+                "creationDate": Double(command.creationDate),
+                "tableId": Double(command.tableId),
                 "dishes": Command.dishesArrayToString(dishes: command.dishes)
             ]) { error in
                 if let error = error {

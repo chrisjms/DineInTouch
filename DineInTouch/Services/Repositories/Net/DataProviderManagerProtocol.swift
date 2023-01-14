@@ -10,7 +10,7 @@ import RxSwift
 
 protocol DataProviderManagerProtocol {
     
-    func getCommand() -> Single<Command>
+    func getCommand(commandId: String) -> Single<Command>
     func getAllCommands() -> Single<[Command]>
     func insertCommand(command: Command) -> Single<Bool>
     func deleteCommand(command: Command) -> Single<Bool>
