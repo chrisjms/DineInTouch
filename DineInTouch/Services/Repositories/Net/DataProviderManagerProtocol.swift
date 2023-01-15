@@ -18,5 +18,6 @@ protocol DataProviderManagerProtocol {
     func getAllDishes() -> Single<[Dish]>
     func insertDish(dish: Dish) -> Single<Bool>
     func deleteDish(dish: Dish) -> Single<Bool>
+    func insertDishes(dishes: [Dish]) -> Single<Bool>
     
 }

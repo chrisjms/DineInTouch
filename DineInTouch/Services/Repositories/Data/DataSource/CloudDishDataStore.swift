@@ -9,7 +9,11 @@ import Foundation
 import RxSwift
 
 class CloudDishDataStore: DishDataStore {
-
+    
+    func saveAllDishes(dishes: Dish) {
+        fatalError("Operation is not available !!!")
+    }
+    
     func saveDish(dish: Dish) {
         fatalError("Operation is not available !!!")
     }
@@ -18,6 +22,9 @@ class CloudDishDataStore: DishDataStore {
         fatalError("Operation is not available !!!")
     }
     
+    func insertDishes(dishes: [Dish]) -> Single<Bool> {
+        return DataProviderManager.shared.insertDishes(dishes: dishes)
+    }
     
     func insertDish(dish: Dish) -> Single<Bool> {
         return DataProviderManager.shared.insertDish(dish: dish)

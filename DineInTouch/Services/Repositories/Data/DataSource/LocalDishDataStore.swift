@@ -16,8 +16,16 @@ class LocalDishDataStore: DishDataStore {
         self.dishDao = DishDao()
     }
 
+    func insertDishes(dishes: [Dish]) -> Single<Bool> {
+        fatalError("Operation is not available !!!")
+    }
+    
     func saveDish(dish: Dish) {
         dishDao.insert(dish: dish)
+    }
+    
+    func saveAllDishes(dishes: Dish) {
+        dishDao.insertAll(dishes: dishes)
     }
     
     func getDishes() -> Single<[Dish]> {
@@ -39,6 +47,5 @@ class LocalDishDataStore: DishDataStore {
     func insertDish(dish: Dish) -> Single<Bool> {
         fatalError("Operation is not available !!!")
     }
-    
     
 }

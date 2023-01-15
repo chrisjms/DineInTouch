@@ -9,65 +9,97 @@ import SwiftUI
 
 struct SetMenuView: View {
     @StateObject var viewModel: SetMenuViewModel
+    @State var xOffset: CGFloat = CGFloat.zero
+    @State var index : Int = 1
+    @State var offset: CGFloat = UIScreen.main.bounds.width
     var body: some View {
         ZStack {
             Color.gray.opacity(0.6)
-            ScrollView(showsIndicators: false) {
-                Text("Ajouter un apéritif")
-                ForEach(viewModel.dishesList, id: \.self) { dish in
-                    if dish.type == .appetizer {
-                        HStack {
-                            Text(dish.name)
-                            Text(dish.price.description + " €")
+            VStack {
+                HStack(spacing: 0) {
+                    ZStack {
+                        Rectangle()
+                            .foregroundColor(.green)
+                            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                        VStack {
+                            Text("Ajouter une entrée")
+                        }
+                    }
+                    ZStack {
+                        Rectangle()
+                            .foregroundColor(.red)
+                            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                        VStack {
+                            Text("Ajouter un plat")
+                        }
+                    }
+                    ZStack {
+                        Rectangle()
+                            .foregroundColor(.blue)
+                            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                        VStack {
+                            Text("Ajouter un dessert")
                         }
                     }
                 }
-                VStack {
-                    TextField("ajouter un apéritif", text: $viewModel.appetizer)
-                    TextField("prix", text: $viewModel.appetizerPrice)
-                    Button(action: {viewModel.createDish(dishType: .appetizer)}) {
-                        Image(systemName: "plus.app")
-                    }
-                }.padding(.horizontal)
-                Text("Ajouter une entrée")
-                ForEach(viewModel.dishesList, id: \.self) { dish in
-                    if dish.type == .starter {
-                        HStack {
-                            Text(dish.name)
-                            Text(dish.price.description + " €")
+                .offset(x: self.offset)
+                    .highPriorityGesture(DragGesture()
+                        .onEnded { value in
+                        if value.translation.width > 50 {
+                            if self.index != 0 {
+                                self.index -= 1
+                            }
+                            if self.index == 1 {
+                                self.offset = UIScreen.main.bounds.width
+                            } else if self.index == 2 {
+                                self.offset = 2
+                            } else {
+                                self.offset = -UIScreen.main.bounds.width
+                            }
+                        }
+                        if -value.translation.width > 50 {
+                            if self.index != 3 {
+                                self.index += 1
+                            }
+                            if self.index == 1 {
+                                self.offset = UIScreen.main.bounds.width
+                            } else if self.index == 2 {
+                                self.offset = 2
+                            } else {
+                                self.offset = -UIScreen.main.bounds.width
+                            }
+                        }
+                    })
+                HStack {
+                    if self.index == 2 {
+                        Button(action: {self.index = 1
+                            self.offset = UIScreen.main.bounds.width
+                        }) {
+                            Text("view 1")
                         }
                     }
-                }
-                VStack {
-                    TextField("ajouter une entrée", text: $viewModel.starter)
-                    TextField("prix", text: $viewModel.starterPrice)
-                    Button(action: {viewModel.createDish(dishType: .starter)}) {
-                        Image(systemName: "plus.app")
-                    }
-                }.padding(.horizontal)
-                Text("Ajouter un plat")
-                ForEach(viewModel.dishesList, id: \.self) { dish in
-                    if dish.type == .dish {
-                        HStack {
-                            Text(dish.name)
-                            Text(dish.price.description + " €")
+                    if self.index == 1 || self.index == 3 {
+                        Button(action: {self.index = 2
+                            self.offset = 0
+                        }) {
+                            Text("view 2")
                         }
                     }
-                }
-                VStack {
-                    TextField("ajouter un plat", text: $viewModel.dish)
-                    TextField("prix", text: $viewModel.dishPrice)
-                    Button(action: {viewModel.createDish(dishType: .dish)}) {
-                        Image(systemName: "plus.app")
+                    if self.index == 2 {
+                        Button(action: {self.index = 3
+                            self.offset = -UIScreen.main.bounds.width
+                        }) {
+                            Text("view 3")
+                        }
                     }
-                }.padding(.horizontal)
-                .padding(.bottom)
-                Button(action: {viewModel.sendMenu()}) {
-                    Text("Valider")
-                }
-            }
+                    if self.index == 3 {
+                        Button(action: {self.viewModel.sendMenu()}) {
+                            Text("Valider")
+                        }
+                    }
+                }.padding(.bottom, 100)
+            }.animation(.default)
         }.ignoresSafeArea()
-        .padding(.top)
         .alert(isPresented: $viewModel.showAlert) {
                 Alert(title: Text("Veuillez entrer un prix ou un plat"))
         }

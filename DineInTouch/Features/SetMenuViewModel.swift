@@ -24,6 +24,8 @@ class SetMenuViewModel: ObservableObject {
     @Published var dishesList: [Dish] = []
     @Published var showAlert: Bool = false
 
+    @Published var tag: Int = 1
+    
     func createDish(dishType: Dish.DishType) {
         switch dishType {
         case .appetizer:
@@ -68,15 +70,13 @@ class SetMenuViewModel: ObservableObject {
     }
 
     func sendMenu() {
-        dishesList.forEach { dish in
-            DataProviderManager.shared.insertDish(dish: dish)
-                .subscribe(onSuccess: { success in
-                    print("successfully added menu")
-                }, onFailure: { error in
-                    print(error.localizedDescription)
-                })
-                .disposed(by: disposeBag)
-        }
+        DataProviderManager.shared.insertDishes(dishes: dishesList)
+            .subscribe(onSuccess: { success in
+                print("successfully added menu")
+            }, onFailure: { error in
+                print(error.localizedDescription)
+            })
+            .disposed(by: disposeBag)
     }
 
 }

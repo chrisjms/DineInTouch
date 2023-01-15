@@ -136,6 +136,27 @@ class DataProviderManager: DataProviderManagerProtocol {
         }
     }
     
+    func insertDishes(dishes: [Dish]) -> Single<Bool> {
+        return Single.create { single in
+            dishes.forEach { dish in
+                self.database.collection("dishes").document(dish.dishId).setData([
+                    "name": dish.name,
+                    "price": dish.price,
+                    "type": dish.type.getLocalizedKey()
+                ]) { error in
+                    if let error = error {
+                        print("error inserting dish")
+                        single(.failure(error))
+                    } else {
+                        print("new dish successfully written")
+                        single(.success(true))
+                    }
+                }
+            }
+            return Disposables.create()
+        }
+    }
+    
     func insertDish(dish: Dish) -> Single<Bool> {
         return Single.create { single in
             self.database.collection("dishes").document(dish.dishId).setData([
