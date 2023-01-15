@@ -11,7 +11,8 @@ import RxSwift
 class SetMenuViewModel: ObservableObject {
     
     let disposeBag: DisposeBag = DisposeBag()
-    
+
+    @Published var goToCommandView: Bool = false
     @Published var appetizer: String = ""
     @Published var appetizerPrice: String = ""
     @Published var starterPrice: String = ""
@@ -73,10 +74,12 @@ class SetMenuViewModel: ObservableObject {
         DataProviderManager.shared.insertDishes(dishes: dishesList)
             .subscribe(onSuccess: { success in
                 print("successfully added menu")
+                DineInTouchKeyManager.shared.saveString(key: "connected", value: "true")
+                self.goToCommandView.toggle()
             }, onFailure: { error in
                 print(error.localizedDescription)
             })
             .disposed(by: disposeBag)
     }
-
+    
 }

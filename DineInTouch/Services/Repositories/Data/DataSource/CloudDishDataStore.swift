@@ -10,7 +10,7 @@ import RxSwift
 
 class CloudDishDataStore: DishDataStore {
     
-    func saveAllDishes(dishes: Dish) {
+    func saveAllDishes(dishes: [Dish]) {
         fatalError("Operation is not available !!!")
     }
     

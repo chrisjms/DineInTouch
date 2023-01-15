@@ -17,6 +17,6 @@ protocol DishDataStore {
     func deleteLocalDish(dish: Dish)
     func insertDish(dish: Dish) -> Single<Bool>
     func insertDishes(dishes: [Dish]) -> Single<Bool>
-    func saveAllDishes(dishes: Dish)
+    func saveAllDishes(dishes: [Dish])
     
 }

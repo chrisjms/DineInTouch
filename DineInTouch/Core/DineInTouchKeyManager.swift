@@ -8,12 +8,12 @@
 import Foundation
 import KeychainAccess
 
-internal class SharePaKeyManager {
+internal class DineInTouchKeyManager {
     
     private var keychain = Keychain(service: "com.chriisjms.DineInTouch")
     
-    public static let shared: SharePaKeyManager = {
-        return SharePaKeyManager()
+    public static let shared: DineInTouchKeyManager = {
+        return DineInTouchKeyManager()
     }()
     
     private init(){}

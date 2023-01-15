@@ -24,7 +24,7 @@ class LocalDishDataStore: DishDataStore {
         dishDao.insert(dish: dish)
     }
     
-    func saveAllDishes(dishes: Dish) {
+    func saveAllDishes(dishes: [Dish]) {
         dishDao.insertAll(dishes: dishes)
     }
     

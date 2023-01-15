@@ -14,6 +14,13 @@ struct launchView: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
+//            if DineInTouchKeyManager.shared.getString(key: "connected", defaultValue: "")!.isEmpty {
+//                SetMenuView(viewModel: SetMenuViewModel())
+//            } else {
+//                if DineInTouchKeyManager.shared.getString(key: "connected", defaultValue: "")! == "true" {
+//                    CommandView()
+//                }
+//            }
             SetMenuView(viewModel: SetMenuViewModel())
         }
     }

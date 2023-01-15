@@ -26,6 +26,7 @@
 		8381FF8A2973148600E5F8AA /* DataProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF892973148600E5F8AA /* DataProviderManager.swift */; };
 		8381FF8C2973152100E5F8AA /* DataProviderManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF8B2973152100E5F8AA /* DataProviderManagerProtocol.swift */; };
 		8381FF8E2973505D00E5F8AA /* SetMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF8D2973505D00E5F8AA /* SetMenuViewModel.swift */; };
+		8381FF90297445C400E5F8AA /* CommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF8F297445C400E5F8AA /* CommandView.swift */; };
 		839D0F1D2972D723006A7675 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1C2972D723006A7675 /* Dish.swift */; };
 		839D0F1F2972D8F5006A7675 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1E2972D8F5006A7675 /* Command.swift */; };
 		839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F232972DA23006A7675 /* CoreDataManager.swift */; };
@@ -60,6 +61,7 @@
 		8381FF892973148600E5F8AA /* DataProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManager.swift; sourceTree = "<group>"; };
 		8381FF8B2973152100E5F8AA /* DataProviderManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManagerProtocol.swift; sourceTree = "<group>"; };
 		8381FF8D2973505D00E5F8AA /* SetMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMenuViewModel.swift; sourceTree = "<group>"; };
+		8381FF8F297445C400E5F8AA /* CommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandView.swift; sourceTree = "<group>"; };
 		839D0F1C2972D723006A7675 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		839D0F1E2972D8F5006A7675 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		839D0F232972DA23006A7675 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				83C07D882972BD7900372BBA /* SetMenuView.swift */,
 				8381FF8D2973505D00E5F8AA /* SetMenuViewModel.swift */,
+				8381FF8F297445C400E5F8AA /* CommandView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				834CAFA02973054C003427E1 /* DishDataRepository.swift in Sources */,
 				8302E7312972F38F00D98545 /* CommandDataStore.swift in Sources */,
 				8302E73F2972FABF00D98545 /* LocalDishDataStore.swift in Sources */,
+				8381FF90297445C400E5F8AA /* CommandView.swift in Sources */,
 				8381FF8E2973505D00E5F8AA /* SetMenuViewModel.swift in Sources */,
 				839D0F1D2972D723006A7675 /* Dish.swift in Sources */,
 				834CAF9E2973052A003427E1 /* DishRepository.swift in Sources */,
