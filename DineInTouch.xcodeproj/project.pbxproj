@@ -23,6 +23,8 @@
 		834CAF9E2973052A003427E1 /* DishRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CAF9D2973052A003427E1 /* DishRepository.swift */; };
 		834CAFA02973054C003427E1 /* DishDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CAF9F2973054C003427E1 /* DishDataRepository.swift */; };
 		834CAFA2297305E8003427E1 /* DishDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CAFA1297305E8003427E1 /* DishDataMapper.swift */; };
+		835BEF2F297D7C35009187C1 /* DishManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BEF2E297D7C35009187C1 /* DishManager.swift */; };
+		835BEF32297D7CC3009187C1 /* DishManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BEF31297D7CC3009187C1 /* DishManagerProtocol.swift */; };
 		8381FF8A2973148600E5F8AA /* DataProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF892973148600E5F8AA /* DataProviderManager.swift */; };
 		8381FF8C2973152100E5F8AA /* DataProviderManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF8B2973152100E5F8AA /* DataProviderManagerProtocol.swift */; };
 		8381FF8E2973505D00E5F8AA /* SetMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF8D2973505D00E5F8AA /* SetMenuViewModel.swift */; };
@@ -58,6 +60,8 @@
 		834CAF9D2973052A003427E1 /* DishRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishRepository.swift; sourceTree = "<group>"; };
 		834CAF9F2973054C003427E1 /* DishDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDataRepository.swift; sourceTree = "<group>"; };
 		834CAFA1297305E8003427E1 /* DishDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDataMapper.swift; sourceTree = "<group>"; };
+		835BEF2E297D7C35009187C1 /* DishManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishManager.swift; sourceTree = "<group>"; };
+		835BEF31297D7CC3009187C1 /* DishManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishManagerProtocol.swift; sourceTree = "<group>"; };
 		8381FF892973148600E5F8AA /* DataProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManager.swift; sourceTree = "<group>"; };
 		8381FF8B2973152100E5F8AA /* DataProviderManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManagerProtocol.swift; sourceTree = "<group>"; };
 		8381FF8D2973505D00E5F8AA /* SetMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMenuViewModel.swift; sourceTree = "<group>"; };
@@ -123,6 +127,23 @@
 				8302E73E2972FABF00D98545 /* LocalDishDataStore.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		835BEF2D297D7C1F009187C1 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				835BEF30297D7CA9009187C1 /* Protocol */,
+				835BEF2E297D7C35009187C1 /* DishManager.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		835BEF30297D7CA9009187C1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				835BEF31297D7CC3009187C1 /* DishManagerProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		8381FF882973147300E5F8AA /* Net */ = {
@@ -240,6 +261,7 @@
 		83C07D852972BD7900372BBA /* DineInTouch */ = {
 			isa = PBXGroup;
 			children = (
+				835BEF2D297D7C1F009187C1 /* Business */,
 				8302E7402972FDA100D98545 /* GoogleService-Info.plist */,
 				839D0F322972E3AE006A7675 /* Core */,
 				839D0F212972D9EB006A7675 /* Features */,
@@ -392,6 +414,7 @@
 				8381FF8C2973152100E5F8AA /* DataProviderManagerProtocol.swift in Sources */,
 				834CAFA02973054C003427E1 /* DishDataRepository.swift in Sources */,
 				8302E7312972F38F00D98545 /* CommandDataStore.swift in Sources */,
+				835BEF2F297D7C35009187C1 /* DishManager.swift in Sources */,
 				8302E73F2972FABF00D98545 /* LocalDishDataStore.swift in Sources */,
 				8381FF90297445C400E5F8AA /* CommandView.swift in Sources */,
 				8381FF8E2973505D00E5F8AA /* SetMenuViewModel.swift in Sources */,
@@ -401,6 +424,7 @@
 				8302E7332972F4FA00D98545 /* CommandDataStoreFactory.swift in Sources */,
 				839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */,
 				839D0F342972E3BC006A7675 /* GLOBALS.swift in Sources */,
+				835BEF32297D7CC3009187C1 /* DishManagerProtocol.swift in Sources */,
 				8302E73B2972FAA500D98545 /* DishDataStoreFactory.swift in Sources */,
 				839D0F272972DA6B006A7675 /* DineInTouchDataBase.xcdatamodeld in Sources */,
 				839D0F362972E7EB006A7675 /* DineInTouchKeyManager.swift in Sources */,
