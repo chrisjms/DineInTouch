@@ -6,19 +6,16 @@
 //
 
 import Foundation
-import MessageUI
 
 class LoginViewModel: ObservableObject {
     
     @Published var restaurantCode: String = ""
     @Published var email: String = ""
     @Published var isNewRestaurantPresented: Bool = false
-    @Published var newCode: String = ""
+    @Published var password: String = ""
     
-    func generateCode() {
-        let id = UUID().uuidString
-        newCode = id
-        DineInTouchKeyManager.shared.saveString(key: "restaurantCode", value: id)
+    func signUp() {
+        
     }
 
 }

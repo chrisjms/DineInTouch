@@ -72,16 +72,8 @@ struct SignUpView: View {
                 TextFields(text: "Nouveau mot de passe", textField: "Mot de passe", bindingText: $viewModel.email)
                 TextFields(text: "Confirmation du mot de passe", textField: "Mot de passe", bindingText: $viewModel.email)
                 TextFields(text: "Votre restaurant est-il déjà renseigné?", textField: "Code du restaurant", bindingText: $viewModel.email)
-                Text("Ou bien")
+                Text("Sinon votre restaurant sera enregistré et vous pourrez renseigner son menu.")
                     .font(.title2)
-                Button(action: {viewModel.generateCode()}) {
-                    Text("Obtenir un code pour votre restaurant")
-                        .font(.title2)
-                        .foregroundColor(.blue)
-                }
-                if !viewModel.newCode.isEmpty {
-                    Text("Votre code est: \(viewModel.newCode)")
-                }
                 Spacer()
                 Button(action: {}) {
                     ZStack {

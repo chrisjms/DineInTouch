@@ -27,6 +27,7 @@
 		83517B8229B3AFF40011A676 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83517B8129B3AFF40011A676 /* Color+.swift */; };
 		83517B8429B3B1DF0011A676 /* UIscreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83517B8329B3B1DF0011A676 /* UIscreen+.swift */; };
 		83517B8729B3B2130011A676 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83517B8629B3B2130011A676 /* LoginViewModel.swift */; };
+		83517B8C29B4B1990011A676 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83517B8B29B4B1990011A676 /* AuthManager.swift */; };
 		835BEF2F297D7C35009187C1 /* DishManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BEF2E297D7C35009187C1 /* DishManager.swift */; };
 		835BEF32297D7CC3009187C1 /* DishManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BEF31297D7CC3009187C1 /* DishManagerProtocol.swift */; };
 		8381FF8A2973148600E5F8AA /* DataProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF892973148600E5F8AA /* DataProviderManager.swift */; };
@@ -68,6 +69,7 @@
 		83517B8129B3AFF40011A676 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		83517B8329B3B1DF0011A676 /* UIscreen+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIscreen+.swift"; sourceTree = "<group>"; };
 		83517B8629B3B2130011A676 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		83517B8B29B4B1990011A676 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		835BEF2E297D7C35009187C1 /* DishManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishManager.swift; sourceTree = "<group>"; };
 		835BEF31297D7CC3009187C1 /* DishManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishManagerProtocol.swift; sourceTree = "<group>"; };
 		8381FF892973148600E5F8AA /* DataProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManager.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			children = (
 				835BEF30297D7CA9009187C1 /* Protocol */,
 				835BEF2E297D7C35009187C1 /* DishManager.swift */,
+				83517B8B29B4B1990011A676 /* AuthManager.swift */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				839D0F362972E7EB006A7675 /* DineInTouchKeyManager.swift in Sources */,
 				8302E7372972F55200D98545 /* LocalCommandDataStore.swift in Sources */,
 				839D0F2D2972DDF5006A7675 /* CommandDao.swift in Sources */,
+				83517B8C29B4B1990011A676 /* AuthManager.swift in Sources */,
 				8302E73D2972FAB500D98545 /* CloudDishDataStore.swift in Sources */,
 				839D0F1F2972D8F5006A7675 /* Command.swift in Sources */,
 				8381FF8A2973148600E5F8AA /* DataProviderManager.swift in Sources */,
