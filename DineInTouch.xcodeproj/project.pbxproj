@@ -32,8 +32,6 @@
 		835BEF32297D7CC3009187C1 /* DishManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BEF31297D7CC3009187C1 /* DishManagerProtocol.swift */; };
 		8381FF8A2973148600E5F8AA /* DataProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF892973148600E5F8AA /* DataProviderManager.swift */; };
 		8381FF8C2973152100E5F8AA /* DataProviderManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF8B2973152100E5F8AA /* DataProviderManagerProtocol.swift */; };
-		8381FF8E2973505D00E5F8AA /* SetMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF8D2973505D00E5F8AA /* SetMenuViewModel.swift */; };
-		8381FF90297445C400E5F8AA /* CommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FF8F297445C400E5F8AA /* CommandView.swift */; };
 		839D0F1D2972D723006A7675 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1C2972D723006A7675 /* Dish.swift */; };
 		839D0F1F2972D8F5006A7675 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F1E2972D8F5006A7675 /* Command.swift */; };
 		839D0F242972DA23006A7675 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F232972DA23006A7675 /* CoreDataManager.swift */; };
@@ -43,9 +41,9 @@
 		839D0F312972E169006A7675 /* CommandDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F302972E169006A7675 /* CommandDataMapper.swift */; };
 		839D0F342972E3BC006A7675 /* GLOBALS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F332972E3BC006A7675 /* GLOBALS.swift */; };
 		839D0F362972E7EB006A7675 /* DineInTouchKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D0F352972E7EB006A7675 /* DineInTouchKeyManager.swift */; };
-		83C07D892972BD7900372BBA /* SetMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C07D882972BD7900372BBA /* SetMenuView.swift */; };
 		83C07D8B2972BD7A00372BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C07D8A2972BD7A00372BBA /* Assets.xcassets */; };
 		83C07D8E2972BD7A00372BBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C07D8D2972BD7A00372BBA /* Preview Assets.xcassets */; };
+		83CE5CBE29B508FD005C6F26 /* AuthManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE5CBD29B508FD005C6F26 /* AuthManagerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,8 +72,6 @@
 		835BEF31297D7CC3009187C1 /* DishManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishManagerProtocol.swift; sourceTree = "<group>"; };
 		8381FF892973148600E5F8AA /* DataProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManager.swift; sourceTree = "<group>"; };
 		8381FF8B2973152100E5F8AA /* DataProviderManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManagerProtocol.swift; sourceTree = "<group>"; };
-		8381FF8D2973505D00E5F8AA /* SetMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMenuViewModel.swift; sourceTree = "<group>"; };
-		8381FF8F297445C400E5F8AA /* CommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandView.swift; sourceTree = "<group>"; };
 		839D0F1C2972D723006A7675 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		839D0F1E2972D8F5006A7675 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		839D0F232972DA23006A7675 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -86,9 +82,9 @@
 		839D0F332972E3BC006A7675 /* GLOBALS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLOBALS.swift; sourceTree = "<group>"; };
 		839D0F352972E7EB006A7675 /* DineInTouchKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DineInTouchKeyManager.swift; sourceTree = "<group>"; };
 		83C07D832972BD7900372BBA /* DineInTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DineInTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83C07D882972BD7900372BBA /* SetMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMenuView.swift; sourceTree = "<group>"; };
 		83C07D8A2972BD7A00372BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83C07D8D2972BD7A00372BBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83CE5CBD29B508FD005C6F26 /* AuthManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManagerProtocol.swift; sourceTree = "<group>"; };
 		8FBCFB0A05F1F0B65429BB26 /* Pods_DineInTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DineInTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB44D967BA6064F83533892B /* Pods-DineInTouch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DineInTouch.debug.xcconfig"; path = "Target Support Files/Pods-DineInTouch/Pods-DineInTouch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				835BEF31297D7CC3009187C1 /* DishManagerProtocol.swift */,
+				83CE5CBD29B508FD005C6F26 /* AuthManagerProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -206,9 +203,6 @@
 		839D0F212972D9EB006A7675 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				83C07D882972BD7900372BBA /* SetMenuView.swift */,
-				8381FF8D2973505D00E5F8AA /* SetMenuViewModel.swift */,
-				8381FF8F297445C400E5F8AA /* CommandView.swift */,
 				83517B7E29B3AD670011A676 /* LoginView.swift */,
 				83517B8629B3B2130011A676 /* LoginViewModel.swift */,
 			);
@@ -439,6 +433,7 @@
 				8302E7292972EB6B00D98545 /* AppDelegate.swift in Sources */,
 				839D0F2B2972DD58006A7675 /* DishDao.swift in Sources */,
 				8302E72E2972F30400D98545 /* CommandRepository.swift in Sources */,
+				83CE5CBE29B508FD005C6F26 /* AuthManagerProtocol.swift in Sources */,
 				8302E7352972F51900D98545 /* CloudCommandDataStore.swift in Sources */,
 				839D0F312972E169006A7675 /* CommandDataMapper.swift in Sources */,
 				8302E72C2972F2F500D98545 /* CommandDataRepository.swift in Sources */,
@@ -448,11 +443,8 @@
 				835BEF2F297D7C35009187C1 /* DishManager.swift in Sources */,
 				83517B8729B3B2130011A676 /* LoginViewModel.swift in Sources */,
 				8302E73F2972FABF00D98545 /* LocalDishDataStore.swift in Sources */,
-				8381FF90297445C400E5F8AA /* CommandView.swift in Sources */,
-				8381FF8E2973505D00E5F8AA /* SetMenuViewModel.swift in Sources */,
 				839D0F1D2972D723006A7675 /* Dish.swift in Sources */,
 				834CAF9E2973052A003427E1 /* DishRepository.swift in Sources */,
-				83C07D892972BD7900372BBA /* SetMenuView.swift in Sources */,
 				8302E7332972F4FA00D98545 /* CommandDataStoreFactory.swift in Sources */,
 				83517B8429B3B1DF0011A676 /* UIscreen+.swift in Sources */,
 				83517B8229B3AFF40011A676 /* Color+.swift in Sources */,

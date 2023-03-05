@@ -21,7 +21,7 @@ struct launchView: App {
 //                    CommandView()
 //                }
 //            }
-            SetMenuView(viewModel: SetMenuViewModel())
+            LoginView(viewModel: LoginViewModel())
         }
     }
 }

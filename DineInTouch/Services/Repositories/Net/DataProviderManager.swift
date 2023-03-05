@@ -36,6 +36,34 @@ class DataProviderManager: DataProviderManagerProtocol {
         }
     }
 
+    func insertNewRestaurant(restaurantId: String) -> Single<Bool> {
+        return Single.create { single in
+            self.database.collection("restaurantId").addDocument(data: ["restaurantId": restaurantId])
+            single(.success(true))
+            return Disposables.create()
+        }
+    }
+    
+    func checkRestaurantId(id: String) -> Single<Bool> {
+        return Single.create { single in
+            Firestore.firestore().collection("restaurantId").getDocuments { snapshot, error in
+                if let error = error {
+                    print(error)
+                    single(.failure(error))
+                } else if let snapshot = snapshot {
+                    var isPresent: Bool = false
+                    snapshot.documents.forEach { document in
+                        if document.documentID == id {
+                            isPresent = true
+                        }
+                    }
+                    single(.success(isPresent))
+                }
+            }
+            return Disposables.create()
+        }
+    }
+    
     func getCommand(commandId: String) -> Single<Command> {
         return Single.create { single in
             self.database.collection("commands").document(commandId).getDocument { snapshot, error in

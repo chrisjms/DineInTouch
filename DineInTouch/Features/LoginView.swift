@@ -69,13 +69,13 @@ struct SignUpView: View {
             )
             VStack {
                 TextFields(text: "Votre adresse mail", textField: "Email", bindingText: $viewModel.email)
-                TextFields(text: "Nouveau mot de passe", textField: "Mot de passe", bindingText: $viewModel.email)
-                TextFields(text: "Confirmation du mot de passe", textField: "Mot de passe", bindingText: $viewModel.email)
+                TextFields(text: "Nouveau mot de passe", textField: "Mot de passe", bindingText: $viewModel.password)
+                TextFields(text: "Confirmation du mot de passe", textField: "Mot de passe", bindingText: $viewModel.passwordConfirmation)
                 TextFields(text: "Votre restaurant est-il déjà renseigné?", textField: "Code du restaurant", bindingText: $viewModel.email)
                 Text("Sinon votre restaurant sera enregistré et vous pourrez renseigner son menu.")
                     .font(.title2)
                 Spacer()
-                Button(action: {}) {
+                Button(action: {viewModel.signUp()}) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
                             .foregroundColor(.blue)
